@@ -1,0 +1,319 @@
+/* --------------------TODO EL SITIO -----------------*/
+
+*{
+    margin: 0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+
+a{
+    text-decoration:none;
+}
+
+
+/* -------------------- CONTENIDO  ------------------*/
+.padre{
+    display: flex;
+    flex-flow:column nowrap;
+    font-family: 'Tiro Kannada', serif;
+}
+
+.margen-interno{
+    padding:0px 50px;
+}
+/* ------------ SECCIÓN HEADER  ---------*/
+    .header{
+        background: url(../images/background.jpg) rgba(133, 106, 170, 0.788);
+        background-blend-mode:multiply;
+        background-position: contain;
+        background-attachment:fixed;
+        background-size: cover;
+        display: flex;
+        flex-flow:column nowrap;
+    }
+
+        .menu{
+            background: rgba(0,0,0,.35);
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            height: 60px;
+            border-bottom: 1px solid rgba(255,255,255,.5);
+        }
+
+            .logo{
+                flex: 1 1 auto;
+            }
+                .logo a{
+                    color:#fff;
+                    font-size:30px;
+                }
+                .logo a:hover{
+                    color:rgb(138, 77, 207);
+                }
+
+ 
+
+            .nav{
+                flex: 5 1 auto;
+            }
+                .nav a{
+                    color:#fff;
+                    padding: 0 10px;
+                    font-size:10px;
+                    text-transform: uppercase;
+                    letter-spacing: 2px;
+                }
+                .nav a:hover{
+                    color:rgb(138, 77, 207);
+                    font-weight: bold;
+                }
+
+
+            .rrss{
+                flex: 1 1 auto;
+                display: flex;
+            }
+                .rrss a{
+                    font-size:18px;
+                    color: #FFF;
+                    padding: 0 5px;
+                }
+                .rrss a:hover{
+                    color:rgb(138, 77, 207);
+                    transform: rotate(20deg);
+                }
+
+
+        .texto_principal{
+            height: 500px;
+            display:flex;
+            align-items: center;
+        }        
+            h1{
+                font-family: 'IBM Plex Serif', serif;
+                color: #fff;
+                font-size: 21px;
+                font-weight: 300;
+                text-align: center;
+                line-height: 1.6;
+            }
+
+
+
+/* ------------ SECCIÓN: ARTICULOS Y ASIDE  ---------*/
+    .seccion{
+        background: #f7f7f7;
+        display:flex;
+    }
+
+
+        .articulos{
+            background: #f7f7f7;
+            display:flex;
+            flex:2 1 180%;
+            flex-flow: row wrap;
+        }
+            .articulo{
+                font-family: 'Kaisei Opti', serif;
+                font-size: 13px;
+                color: #444;
+                letter-spacing: 1px;
+                margin:10px 10px 0 0px;
+                flex:1 1 45%;
+                background: #ececec;
+            }
+                .articulo img{
+                    width: 100%;    
+                }
+                .articulo h3{
+                    font-family: 'IBM Plex Serif', serif;
+                    color: rgba(255, 255, 255, 0.712);
+                    font-size: 13px;
+                    padding: 0px 0px 10px 5px;
+                    margin-top: -80px;
+                    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+                }
+                .articulo h2{
+                    color: #fff;
+                    font-size: 25px;
+                    text-transform: uppercase;
+                    padding: 0px 0px 10px 5px;
+                    text-shadow: 0px 0px 5px rgb(0, 0, 0);
+                    }
+                .articulo a{
+                    color: #f7f7f7;
+                    font-size: 13px;
+                    padding: 2px;
+                    background: #000;
+                    margin: 10px 10px;
+                    display:inline-block;
+                    text-align:center;
+                }
+                .articulo a:hover{
+                    background: rgb(0, 96, 126);
+                }
+
+                .articulo:hover{
+                    color: rgb(0, 96, 126);
+                    box-shadow: 0px 0px 5px black;
+                }
+
+                .articulo p{
+                    padding: 5px;
+                    margin-bottom:2px;
+                }
+
+
+
+            .navegacion{
+                background: #000;
+                flex: 1 1 100%;
+                font-family:monospace;
+                margin: 10px 10px 0 0;
+            }
+                .navegacion a{
+                    color: #fff;
+                    font-size: 11px;
+                    text-transform: uppercase;
+                    padding: 0 10px;
+                    letter-spacing: 2px;
+                }
+                .navegacion a:hover{
+                    background: rgb(0, 96, 126);
+                }
+
+
+
+        .aside{
+            flex: 1 1 auto;
+            margin: 10px 5px 10px 0px;
+            padding: 5px;
+        }
+            .publicidad img{
+                width: 100%;
+            }
+
+            .publicidad h4{
+                background: #000;
+                color: #fff;
+                padding: 10px;
+                text-transform: uppercase;
+            }
+
+            .publicidad:hover {
+                margin-top: 1px;
+                box-shadow: 0 0 5px black;;
+            }
+
+
+
+ /* ------------ SECCIÓN FOOTER ---------*/
+    .footer{
+        background: #000;
+        display:flex;
+        justify-content:center;
+        margin-top: 10px;
+    }
+        .pie{
+            width: 300px;
+        }
+            .pie a{
+                color: #fff;
+                font-size: 10px;
+                text-transform: uppercase;
+                padding: 0 10px;
+                letter-spacing: 2px;
+            }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media all and (max-width: 1120px){
+    .seccion{
+        flex-direction: column;
+    }
+    .menu{
+        flex-direction:column;
+        height: auto;
+    }
+    .aside{
+        display:flex;
+        justify-content:center;
+    }
+    h1{
+        font-size:15px;
+    }
+
+    .texto_principal{
+        height:450px;
+    }
+}
+
+@media all and (max-width: 765px){
+    .articulos{
+        flex-direction: column;
+        }
+        .articulo h3{
+            font-size: 10px;
+        }
+        .articulo h2{
+            font-size: 20px;
+        }
+        .articulo p{
+            margin-top: 20px;
+        }
+    
+    .navegacion{
+        padding:2px 0px;
+    }
+
+    .navegacion a{
+        font-size: 10px;
+        letter-spacing:-1px;
+    }
+}
+
+@media all and (max-width: 505px){
+    .on-off{
+        display:none;
+    }
+    .nav a{
+        font-size:20px;
+    }
+    .texto_principal{
+        height:380px;
+    }
+
+}
+
+
+
+@media all and (max-width: 400px){
+    .aside{
+        flex-direction: column;
+    }
+}
+
+
+
+
+/* FUENTES GOOGLE
+
+font-family: 'IBM Plex Serif', serif;
+font-family: 'Kaisei Opti', serif;
+font-family: 'Tiro Kannada', serif;
+
+*/
+
